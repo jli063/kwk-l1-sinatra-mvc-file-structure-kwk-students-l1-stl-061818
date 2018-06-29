@@ -1,11 +1,479 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Sinatra MVC</title>
-  </head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
 
-  <body>
-    <h1>Index</h1>
-    <p> I love programming </p>
-  </body>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+
+.w3-bar-block .w3-bar-item {padding:20px}
+
+</style>
+<body>
+<p><a href="https://www.w3schools.com/html/"></a></p>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#Our mission" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
+  <a href="#about the team" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto"></div>
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16"><a href="quiz.erb">Quiz</a></div>
+    <div class="w3-center w2-padding-16"><h1>Travel from Home</h1></div>
+   </div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter"></div>
+      <img src="http://assets.kraftfoods.com/recipe_images/opendeploy/173356_640x428.jpg" alt="Chicken" style="width:100%">
+      <h3>
+<p><a href="https://www.allrecipes.com/recipe/45736/chicken-tikka-masala/
+">Chicken Tikka Masala</a></p>
+</h3>
+      <p>Hard recipe,It should take about 2hr and 20min. This is a delicious recipe. Must try!</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://cdn.shopify.com/s/files/1/0226/1641/articles/Della-Terra-Samosas_84569635.jpg?v=1474338415" alt="Samosas" style="width:100%"> 
+     <h3>
+<p><a href="https://myfoodstory.com/best-indian-punjabi-samosa-recipe/">Samosas
+    </a></p>
+</h3>
+      <p>Medium recipe,It should take about 6-8 hours to make. Delicious fryed snack.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="http://www.ndtv.com/cooks/images/matar%20paneer%20new.jpg" alt="Paneer" style="width:100%">
+      <h3><p><a href="https://food.ndtv.com/recipe-kadahi-paneer-98967
+">Kadai Paneer </a></p></h3>
+      <p>Easy recipe,It should take about 35 min. Vegetarian</p>
+     
+    </div>
+    <div class="w3-quarter">
+      <img src="https://i1.wp.com/ministryofcurry.com/wp-content/uploads/2017/05/IMG_3549.jpg?fit=940%2C1038&ssl=1" alt="Biryani" style="width:100%">
+      <h3><p><a href="https://www.saveur.com/article/recipes/kachi-yakhni-biryani-hyderabadi-style-steamed-c">Kachi Yakhni Biryani </a></p></h3>
+      <p>Hard recipe, it takes about 1hr and 5min. Mix of rice and chicken. Delicious dinner option.</p>
+    </div>
+  <div class="w3-quarter">
+      <img src="https://www.jocooks.com/wp-content/uploads/2011/04/naan-bread-1.jpg" alt="Naan" style="width:100%">
+      <h3><p><a href="https://www.gimmesomeoven.com/homemade-naan-recipe/"> Homemade Naan </a></p></h3>
+      <p>Medium recipe, it takes about an 1hr and 30min. Delicious to eat with curry.</p>
+    </div>
+
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter"></div>
+      <img src="https://i0.wp.com/allyscooking.com/wp-content/uploads/2017/07/greek-kabobs-7.30.17-10.jpg?resize=3145%2C3145" alt="Chicken Kababs" style="width:100%">
+      <h3><p><a href="https://www.deliciousmeetshealthy.com/grilled-mediterranean-chicken-kebabs">Grilled Mediterranean Chicken Kebabs</a></p></h3>
+      <p>hard recipe,it takes about 30min or less delicious. Will love the taste!</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://www.daringgourmet.com/wp-content/uploads/2013/04/Gyros-2-sm_edited.jpg" alt="Gyro" style="width:100%">
+      <h3><p><a href="https://www.foodnetwork.com/recipes/alton-brown/gyro-meat-with-tzatziki-sauce-recipe-2047710">Gyro Meat with Tzatziki Sauce</a></p></h3>
+      <p>Hard recipe,takes about 3hr and 45min to make.Yum!</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://atmedia.imgix.net/fdf00793e8cb355eea81feb4506e937b661cb7fc?auto=format&q=45&w=1033.0&fit=max&cs=strip" alt="Freekeh Salad" style="width:100%">
+      <h3><p><a href="https://www.thekitchn.com/recipe-spiced-freekeh-salad-with-collard-greens-and-chickpeas-recipes-from-the-kitchn-200916
+">Mediterranean Freekeh Salad </a></p></h3>
+      <p>Easy,takes about 30min or less. Delicious veg option.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://www.seriouseats.com/recipes/images/2015/08/20150626-Stacked-Perfect-Pitas-Yvonne-Ruperti-Edit-Edit-1500x1125.jpg" alt="Pita" style="width:100%">
+      <h3><p><a href="https://www.seriouseats.com/recipes/2015/08/perfect-pita-bread-recipe.html
+">Pita Bread</a></p></h3>
+      <p>Medium recipe,takes about 2hr and 30min.Delicious to eat with hummus.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://toriavey.com/images/2014/05/MG_0420-1-960x720.jpg" alt="Pita" style= width:100%>
+      <h3><p><a href="https://www.delish.com/cooking/recipe-ideas/recipes/a34086/babaganoush-recipe-122544/
+">Babagonoush</a></p></h3>
+      <p>Hard recipe,takes about an 1hr and 15min.Try something new!</p>
+    </div>
+ 
+
+<!-- Third Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter"></div>
+      <img src="https://images.meredith.com/content/dam/bhg/Images/2014/9/22/RU233617.jpg.rendition.largest.jpg" alt="Pizza" style="width:100%">
+      <h3><p><a href="https://www.thekitchn.com/how-to-make-really-good-pizza-at-home-cooking-lessons-from-the-kitchn-178384">Awesome Homemade Pizza</a></p></h3>
+      <p>Meduim recipe, takes about an hour. Find comfort in making your own food.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://recipes.timesofindia.com/photo/54678916.cms" alt="Calzone" style="width:100%">
+      <h3><p><a href="https://www.pillsbury.com/recipes/loaded-calzones/68a56ee9-3f7f-4a4a-aff2-f7a61a734bc5">Loaded Calzone</a></p></h3>
+      <p>hard recipe, takes about 35min. Tastes even better than in restaurants.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/2/4/1/RX-FNM_030111-Lighten-Up-012_s4x3.jpg.rend.hgtvcom.406.305.suffix/1382539856907.jpeg" style="width:100%">
+      <h3><p><a href="https://www.delish.com/cooking/recipe-ideas/recipes/a55312/best-homemade-fettuccine-alfredo-recipe/ ">Fettuccine Alfredo</a></p></h3>
+      <p>Easy recipe, takes about 20min. Delicious!!!</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://www.muscleforlife.com/wp-content/themes/mfl-2017/tim/xtimthumb.php,qsrc=https,3A,_,_www.muscleforlife.com,_wp-content,_uploads,_2015,_08,_italian-food-recipes.png,aw=640,aq=85.pagespeed.ic.amCi5WcywZ.webp" style="width:100%">
+      <h3><p><a href="https://www.delish.com/cooking/recipe-ideas/recipes/a55312/best-homemade-fettuccine-alfredo-recipe/ ">Lasagna</a></p></h3>
+
+    <p>Hard recipe</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://www.seriouseats.com/recipes/images/2014/07/20140714-eggplant-rollatini-joshua-bousel2-1500x1125.jpg" alt="eggplant rollatini" style="width:100%">
+      <h3><p><a href="https://www.allrecipes.com/recipe/84774/eggplant-rollatini/?internalSource=rotd&referringId=723&referringContentType=recipe%20hub">Loaded Eggplant Rollatini</a></p></h3>
+      <p>Easy recipe,takes about 45min. Delicious recipe for you if you like eggplants.</p>
+    </div>
+  </div>
+  
+  <!-- Fourth Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter"></div>
+      <img src="https://i.ytimg.com/vi/UCAfDngsQcQ/maxresdefault.jpg" alt="Egg Rolls" style="width:100%">
+      <h3><p><a href="https://www.chowhound.com/recipes/crispy-chinese-egg-rolls-31717 ">Crispy Chinese Egg Rolls</a></p></h3>
+      <p>This is a medium recipe. It takes about 2 hours to make. Would reccomend..</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToLX0q65Tu2Dkx5J9d2a1D1n1rAksYi5iiA1yUGx_RbfG2cLZyIw" alt="Salmon" style="width:100%">
+      <h3><p><a href="http://www.geniuskitchen.com/recipe/chinese-fried-rice-38748 ">Chicken Fried Rice</a></p></h3>
+      <p>This is an easy recipe. You will make your own rice in the comfort of your own home:)</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="http://thewanderlustkitchen.com/wp-content/uploads/2014/10/asian-potsticker-recipe-550.jpg" alt="Sandwich" style="width:100%">
+      <h3><p><a href="https://www.epicurious.com/recipes/food/views/pork-pot-stickers-236605 ">Pot Sticker</a></p></h3>
+      <p>This recipe is a hard reciape and will take about 30 minutes. Must try!</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="http://cdn-image.myrecipes.com/sites/default/files/styles/medium_2x/public/image/recipes/rs/2008/chicken-bok-rs-1840656-x.jpg?itok=zXUGf4pu" alt="stir fry" style="width:100%">
+      <h3><p><a href="http://thewanderlustkitchen.com/sichuan-bok-choy-tofu-stir-fry/">Bok Choy ToFu</a></p></h3>
+      <p> This ia an easy recipe which takes 20 minutes. simple dish of pan-fried tofu, stir-fried bok choy, and a sweet-and-spicy Sichuan pepper sauce.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://s-media-cache-ak0.pinimg.com/originals/8f/7b/2c/8f7b2c0b67418bd11b301104154a3b1b.jpg" alt="Zha Jiang Mian (炸酱面) – Fried Sauce Noodles" style="width:100%">
+      <h3><p><a href="https://omnivorescookbook.com/homemade-zha-jiang-mian-fried-sauce-noodles/">Zha Jiang Mian (炸酱面) – Fried Sauce Noodles </a></p></h3>
+      <p>Ths is a hard recipe.It takes 40 minutes This is a recommended local dish from Beijing.</p>
+    </div>
+
+  
+ 
+  
+  
+  <!-- Pagination
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div> -->
+  
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>About Us</h3><br>
+    <img src="https://pbs.twimg.com/profile_images/913765818697166848/an4MJ25E.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32"></div>
+      <h4><b>Travel Without Actually Travelling</b></h4>
+      <h6><i>With Passion For Real, Good Food</i></h6>
+      <p>This wesite is founded by Jesisca, Evie and Sonali. Our goal is to help you cook recipes, from your favorite places, experiencing their delicious culinary tastes, right here in your kitchen. We have recipes for all cooks; begginers, advanced and profesionals. Find your perfect recipe today!
+    </div>
+  <hr>
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third w3-center"> 
+      <h3>Thanks</h3>
+      <p>Special Thanks to Esme and Kennedy for helping us the whole way.Thank you Kode With Klossy for this oppurtunity.Thank you Jon and Jenn for helping us learn all the coding tools we needed for this website. Lastly, thank you to the interent for helping us.</p>
+      
+    </div>
+  
+    <div class="w3-third">
+      <h3>    Rating</h3>
+          <span>
+             <class> Food&Wine -"Quality Recipes! Would rate it 4.5 stars!" </class> 
+          </span>
+          
+          </div>
+
+    <div class="w3-third w3-serif">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Food</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chinese</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Italian</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Mediterranean</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span> 
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Vegetarian</span> 
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Delicious</span> 
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Indian</span>
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+<div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+</div>
+
+</body>
 </html>
+
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<title>W3.CSS Template</title>-->
+<!--<meta charset="UTF-8">-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">-->
+<!--<style>-->
+<!--body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}-->
+<!--.w3-bar-block .w3-bar-item {padding:20px}-->
+<!--</style>-->
+<!--<body>-->
+<!-- Sidebar (hidden by default) -->
+<!--<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">-->
+<!--  <a href="javascript:void(0)" onclick="w3_close()"-->
+<!--  class="w3-bar-item w3-button">Close Menu</a>-->
+<!--  <a href="#Our mission" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>-->
+<!--  <a href="#about the team" onclick="w3_close()" class="w3-bar-item w3-button">About</a>-->
+<!--</nav>-->
+
+<!-- Top menu -->
+<!--<div class="w3-top">-->
+<!--  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">-->
+<!--    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>-->
+<!--    <div class="w3-right w3-padding-16" name="quiz_page"><a href="quiz">Quiz</a></div>-->
+<!--    <div class="w3-center w2-padding-16"><h1>Travel from Home</h1></div>-->
+<!--  </div>-->
+<!--</div>-->
+  
+<!-- !PAGE CONTENT! -->
+<!--<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">-->
+
+  <!-- First Photo Grid-->
+<!--  <div class="w3-row-padding w3-padding-16 w3-center" id="food">-->
+<!--    <div class="w3-quarter">-->
+<!--      <img src="http://assets.kraftfoods.com/recipe_images/opendeploy/173356_640x428.jpg" alt="Chicken" style="width:100%">-->
+<!--      <h3>Chicken Tikka Masala</h3>-->
+<!--      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+<!--    </div>-->
+<!--    <div class="w3-quarter">-->
+<!--      <img src="https://cdn.shopify.com/s/files/1/0226/1641/articles/Della-Terra-Samosas_84569635.jpg?v=1474338415" alt="Samosas" style="width:100%">-->
+<!--      <h3>Samosas</h3>-->
+<!--      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+<!--    </div>-->
+<!--    <div class="w3-quarter">-->
+<!--      <img src="http://www.ndtv.com/cooks/images/matar%20paneer%20new.jpg" alt="Paneer" style="width:100%">-->
+<!--      <h3>Kadai Paneer</h3>-->
+<!--      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+<!--      <p>What else?</p>-->
+<!--    </div>-->
+<!--    <div class="w3-quarter">-->
+<!--      <img src="https://i1.wp.com/ministryofcurry.com/wp-content/uploads/2017/05/IMG_3549.jpg?fit=940%2C1038&ssl=1" alt="Biryani" style="width:100%">-->
+<!--      <h3>Kachi Yakhni Biryani</h3>-->
+<!--      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+<!--    </div>-->
+<!--  <div class="w3-quarter">-->
+<!--      <img src="https://i1.wp.com/ministryofcurry.com/wp-content/uploads/2017/05/IMG_3549.jpg?fit=940%2C1038&ssl=1" alt="Biryani" style="width:100%">-->
+<!--      <h3>Kachi Yakhni Biryani</h3>-->
+<!--      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+<!--    </div>-->
+<!--  </div>-->
+  
+  <!-- Second Photo Grid-->
+<!--  <div class="w3-row-padding w3-padding-16 w3-center">-->
+<!--    <div class="w3-quarter">-->
+<!--      <img src="https://i0.wp.com/allyscooking.com/wp-content/uploads/2017/07/greek-kabobs-7.30.17-10.jpg?resize=3145%2C3145" alt="Chicken Kababs" style="width:100%">-->
+<!--      <h3>Grilled Mediterranean Chicken Kebabs</h3>-->
+<!--      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+<!--    </div>-->
+<!--    <div class="w3-quarter">-->
+<!--      <img src="https://www.daringgourmet.com/wp-content/uploads/2013/04/Gyros-2-sm_edited.jpg" alt="Gyro" style="width:100%">-->
+<!--      <h3>Gyro Meat with Tzatziki Sauce</h3>-->
+<!--      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+<!--    </div>-->
+<!--    <div class="w3-quarter">-->
+<!--      <img src="https://atmedia.imgix.net/fdf00793e8cb355eea81feb4506e937b661cb7fc?auto=format&q=45&w=1033.0&fit=max&cs=strip" alt="Freekeh Salad" style="width:100%">-->
+<!--      <h3>Mediterranean Freekeh Salad with Collard Greens and Chickpeas</h3>-->
+<!--      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+<!--    </div>-->
+<!--    <div class="w3-quarter">-->
+<!--      <img src="https://www.seriouseats.com/recipes/images/2015/08/20150626-Stacked-Perfect-Pitas-Yvonne-Ruperti-Edit-Edit-1500x1125.jpg" alt="Pita" style="width:100%">-->
+<!--      <h3>Pita Bread</h3>-->
+<!--      <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!-- Third Photo Grid-->
+<!--  <div class="w3-row-padding w3-padding-16 w3-center">-->
+<!--    <div class="w3-quarter">-->
+<!--      <img src="https://images.meredith.com/content/dam/bhg/Images/2014/9/22/RU233617.jpg.rendition.largest.jpg" alt="Pizza" style="width:100%">-->
+<!--      <h3>Awesome Homemade Pizza</h3>-->
+<!--      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+<!--    </div>-->
+<!--    <div class="w3-quarter">-->
+<!--      <img src="https://recipes.timesofindia.com/photo/54678916.cms" alt="Calzone" style="width:100%">-->
+<!--      <h3>Loaded Calzone</h3>-->
+<!--      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+<!--    </div>-->
+<!--    <div class="w3-quarter">-->
+<!--      <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/2/4/1/RX-FNM_030111-Lighten-Up-012_s4x3.jpg.rend.hgtvcom.406.305.suffix/1382539856907.jpeg" style="width:100%">-->
+<!--      <h3>Fettuccine alfredo</h3>-->
+<!--      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+<!--    </div>-->
+<!--    <div class="w3-quarter">-->
+<!--      <img src="https://www.muscleforlife.com/wp-content/themes/mfl-2017/tim/xtimthumb.php,qsrc=https,3A,_,_www.muscleforlife.com,_wp-content,_uploads,_2015,_08,_italian-food-recipes.png,aw=640,aq=85.pagespeed.ic.amCi5WcywZ.webp" style="width:100%">-->
+<!--      <h3>protein lasagna</h3>-->
+<!--      <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+<!--    </div>-->
+<!--  </div>-->
+  
+  <!-- Fourth Photo Grid-->
+<!--  <div class="w3-row-padding w3-padding-16 w3-center">-->
+<!--    <div class="w3-quarter">-->
+<!--      <img src="https://i.ytimg.com/vi/UCAfDngsQcQ/maxresdefault.jpg" alt="Egg Rolls" style="width:100%">-->
+<!--      <h3>Crispy Chinese Egg Rolls</h3>-->
+<!--      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+<!--    </div>-->
+<!--    <div class="w3-quarter">-->
+<!--      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToLX0q65Tu2Dkx5J9d2a1D1n1rAksYi5iiA1yUGx_RbfG2cLZyIw" alt="Salmon" style="width:100%">-->
+<!--      <h3>Chicken Fried Rice</h3>-->
+<!--      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+<!--    </div>-->
+<!--    <div class="w3-quarter">-->
+<!--      <img src="http://thewanderlustkitchen.com/wp-content/uploads/2014/10/asian-potsticker-recipe-550.jpg" alt="Sandwich" style="width:100%">-->
+<!--      <h3>Pot Stickers</h3>-->
+<!--      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+<!--    </div>-->
+<!--    <div class="w3-quarter">-->
+<!--      <img src="http://thewanderlustkitchen.com/wp-content/uploads/2016/12/Sichuan-Tofu-Bok-Choy-Stir-Fry-2.jpg" alt="Croissant" style="width:100%">-->
+<!--      <h3>Bok Choy ToFu</h3>-->
+<!--      <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+<!--    </div>-->
+<!--  </div>-->
+  
+  <!-- Fifth Photo Grid-->
+  <!--<div class="w3-row-padding w3-padding-16 w3-center">-->
+  <!--  <div class="w3-quarter">-->
+  <!--    <img src="https://i2.wp.com/www.angsarap.net/wp-content/uploads/2011/11/fish-and-chips.jpg?ssl=1" style="width:100%">-->
+  <!--    <h3>Fish and Chips</h3>-->
+  <!--    <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+  <!--  </div>-->
+  <!--  <div class="w3-quarter">-->
+  <!--    <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2014/6/19/1/BW2D14_Yorkshire-Pudding_s4x3.jpg.rend.hgtvcom.616.462.suffix/1403627915429.jpeg" alt="Salmon" style="width:100%">-->
+  <!--    <h3>Yorkshire Pudding</h3>-->
+  <!--    <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+  <!--  </div>-->
+  <!--  <div class="w3-quarter">-->
+  <!--    <img src="https://christinascucina.com/wp-content/uploads/2012/01/IMG_4048.jpg" alt="Sandwich" style="width:100%">-->
+  <!--    <h3>british sausage roll</h3>-->
+  <!--    <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+  <!--  </div>-->
+  <!--  <div class="w3-quarter">-->
+  <!--    <img src="https://i.pinimg.com/originals/42/f3/8b/42f38b4c801f62e009d6053507483551.jpg" style="width:100%">-->
+  <!--    <h3>Shepherd's Pie</h3>-->
+  <!--    <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+  <!--  </div>-->
+  <!--</div>-->
+  
+  
+  <!-- Pagination
+<!--  <div class="w3-center w3-padding-32">-->
+<!--    <div class="w3-bar">-->
+<!--      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>-->
+<!--      <a href="#" class="w3-bar-item w3-black w3-button">1</a>-->
+<!--      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>-->
+<!--      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>-->
+<!--      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>-->
+<!--      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>-->
+<!--    </div>-->
+<!--  </div> -->-->
+  
+<!--  <hr id="about">-->
+
+  <!-- About Section -->
+<!--  <div class="w3-container w3-padding-32 w3-center">  -->
+<!--    <h3>About Me, The Food Man</h3><br>-->
+<!--    <img src="/w3images/chef.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">-->
+<!--    <div class="w3-padding-32">-->
+<!--      <h4><b>I am Who I Am!</b></h4>-->
+<!--      <h6><i>With Passion For Real, Good Food</i></h6>-->
+<!--      <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <hr>-->
+  
+  <!-- Footer -->
+<!--  <footer class="w3-row-padding w3-padding-32">-->
+<!--    <div class="w3-third">-->
+<!--      <h3>FOOTER</h3>-->
+<!--      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>-->
+<!--      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>-->
+<!--    </div>-->
+  
+<!--    <div class="w3-third">-->
+<!--      <h3>BLOG POSTS</h3>-->
+<!--      <ul class="w3-ul w3-hoverable">-->
+<!--        <li class="w3-padding-16">-->
+<!--          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">-->
+<!--          <span class="w3-large">Lorem</span><br>-->
+<!--          <span>Sed mattis nunc</span>-->
+<!--        </li>-->
+<!--        <li class="w3-padding-16">-->
+<!--          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">-->
+<!--          <span class="w3-large">Ipsum</span><br>-->
+<!--          <span>Praes tinci sed</span>-->
+<!--        </li> -->
+<!--      </ul>-->
+<!--    </div>-->
+
+<!--    <div class="w3-third w3-serif">-->
+<!--      <h3>POPULAR TAGS</h3>-->
+<!--      <p>-->
+<!--        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>-->
+<!--        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salmon</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>-->
+<!--        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>-->
+<!--        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>-->
+<!--        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span>-->
+<!--      </p>-->
+<!--    </div>-->
+<!--  </footer>-->
+
+<!-- End page content -->
+<!--</div>-->
+
+<!--<script>-->
+// Script to open and close sidebar
+<!--function w3_open() {-->
+<!--    document.getElementById("mySidebar").style.display = "block";-->
+<!--}-->
+ 
+<!--function w3_close() {-->
+<!--    document.getElementById("mySidebar").style.display = "none";-->
+<!--}-->
+<!--</script>-->
+
+<!--</body>-->
+<!--</html>-->
